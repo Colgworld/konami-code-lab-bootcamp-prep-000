@@ -11,11 +11,19 @@ const alphabet = [
   "a"
 ];
 
-// Keep track of index outside of the event handler.
-let index = 0;
+document.addEventListener('keydown', onKeyDownHandler, true);
 
+let index = 0;
+const bodyPress = document.getElementById('body');
+
+function init() {
+  {
+    
+  }
+}
 // This is the function that would be invoked by the event listener.
 function onKeyDownHandler(e) {
+  init()
   const key = e.key;
 
   if (key === alphabet[index]) {
@@ -31,6 +39,3 @@ function onKeyDownHandler(e) {
   }
 }
 
-function init() {
-  // your code here
-}
